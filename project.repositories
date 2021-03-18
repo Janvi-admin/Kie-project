@@ -1,0 +1,28 @@
+<project-repositories>
+  <repositories>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>sncr-snapshots</id>
+        <url>http://mavenrepo.synchronoss.net:8081/nexus/content/repositories/snapshots-only</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>C:/Users/pdin0001/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>central</id>
+        <url>http://mavenrepo.synchronoss.net:8081/nexus/content/repositories/releases-only</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+  </repositories>
+</project-repositories>

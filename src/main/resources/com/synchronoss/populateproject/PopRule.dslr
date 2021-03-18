@@ -1,0 +1,15 @@
+package com.synchronoss.populateproject;
+
+import com.synchronoss.ruleserver.core.xpath.XOMContainerBean;
+import com.synchronoss.ruleserver.core.xpath.XOMAccessBean;
+import com.synchronoss.brms.dresclasses.Populated;
+
+rule "POP" ruleflow-group "POPFLOW"
+
+when
+    xcb object
+    Evaluate( the field_tag "/RequestTroubleReportCreationRequest" is exists 
+    && the "/RequestTroubleReportCreationRequest/TroubleType/Number" is not populated)
+then
+    the error code "POP0001" with message "The TroubleType Number is required" for the field "/RequestTroubleReportCreationRequest/TroubleType/Number"
+end
